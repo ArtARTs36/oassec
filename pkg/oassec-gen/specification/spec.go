@@ -2,7 +2,7 @@ package specification
 
 import (
 	"fmt"
-	"github.com/artarts36/go-swagger-auth/scope"
+	"github.com/artarts36/oassec/scope"
 )
 
 type Spec struct {

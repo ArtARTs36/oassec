@@ -1,4 +1,4 @@
-module github.com/artarts36/go-swagger-auth
+module github.com/artarts36/oassec
 
 go 1.21.0
 

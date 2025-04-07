@@ -1,8 +1,8 @@
-module github.com/artarts36/go-swagger-auth/pkg/gen
+module github.com/artarts36/oassec/pkg/gen
 
 go 1.21.0
 
-replace github.com/artarts36/go-swagger-auth => ./../../
+replace github.com/artarts36/oassec => ./../../
 
 require (
 	github.com/artarts36/singlecli v0.1.0
@@ -10,7 +10,7 @@ require (
 )
 
 require (
-	github.com/artarts36/go-swagger-auth v0.0.0-00010101000000-000000000000
+	github.com/artarts36/oassec v0.0.0-00010101000000-000000000000
 	github.com/bahlo/generic-list-go v0.2.0 // indirect
 	github.com/buger/jsonparser v1.1.1 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
