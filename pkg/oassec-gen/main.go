@@ -3,7 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/artarts36/oassec/pkg/gen/specification"
+
+	"github.com/artarts36/oassec/pkg/oassec-gen/specification"
 	cli "github.com/artarts36/singlecli"
 	"gopkg.in/yaml.v3"
 	"os"

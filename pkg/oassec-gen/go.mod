@@ -1,4 +1,4 @@
-module github.com/artarts36/oassec/pkg/gen
+module github.com/artarts36/oassec/pkg/oassec-gen
 
 go 1.21.0
 
