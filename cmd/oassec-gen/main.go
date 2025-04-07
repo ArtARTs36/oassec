@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/artarts36/oassec/pkg/oassec-gen/specification"
+	"github.com/artarts36/oassec/cmd/oassec-gen/specification"
 	cli "github.com/artarts36/singlecli"
 	"gopkg.in/yaml.v3"
 	"os"
@@ -39,8 +39,9 @@ func main() {
 		},
 		Args: []*cli.ArgDefinition{
 			{
-				Name:     "action",
-				Required: true,
+				Name:        "action",
+				Required:    true,
+				Description: "Action to run",
 				ValuesEnum: []string{
 					"gen-scope-map",
 				},
