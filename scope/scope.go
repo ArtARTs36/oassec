@@ -61,7 +61,7 @@ func parseObjectID(loc string) (*ObjectID, error) {
 
 	id := &ObjectID{}
 
-	id.In = ObjectIDLocator(parts[0])
+	id.In = Location(parts[0])
 	if !id.In.Valid() {
 		return nil, fmt.Errorf("invalid value. expected query.field_name or path.field_name, got %q", id.In)
 	}

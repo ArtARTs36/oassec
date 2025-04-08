@@ -20,7 +20,7 @@ type Parameter struct {
 	In   string `yaml:"in"`
 }
 
-func (op *Operation) HasParameter(name string, in scope.ObjectIDLocator) bool {
+func (op *Operation) HasParameter(name string, in scope.Location) bool {
 	for _, parameter := range op.Parameters {
 		if parameter.In == string(in) && parameter.Name == name {
 			return true

@@ -1,9 +1,9 @@
 package scope
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
 
+	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
@@ -15,7 +15,7 @@ func TestParseScope(t *testing.T) {
 		Action:     "read",
 		ObjectType: "user",
 		ObjectID: ObjectID{
-			In:  ObjectIDLocatorQuery,
+			In:  LocationQuery,
 			Key: "id",
 		},
 	}, scope)

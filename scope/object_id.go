@@ -1,21 +1,23 @@
 package scope
 
-type ObjectIDLocator string
+type Location string
 
 const (
-	ObjectIDLocatorInvalid = ""
-	ObjectIDLocatorPath    = "path"
-	ObjectIDLocatorQuery   = "query"
+	LocationInvalid = ""
+	LocationPath    = "path"
+	LocationQuery   = "query"
+	LocationHeader  = "header"
+	LocationCookie  = "cookie"
 )
 
 type ObjectID struct {
-	In  ObjectIDLocator
+	In  Location
 	Key string
 }
 
-func (o ObjectIDLocator) Valid() bool {
+func (o Location) Valid() bool {
 	switch o {
-	case ObjectIDLocatorPath, ObjectIDLocatorQuery:
+	case LocationPath, LocationQuery, LocationHeader, LocationCookie:
 		return true
 	}
 	return false
